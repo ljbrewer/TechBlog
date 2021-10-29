@@ -3,11 +3,10 @@ require('dotenv').config();
 const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
-const routes = require('./controllers');
+const routes = require('./controller');
 const helpers = require('./utils/helpers');
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
-const _ = require('underscore');
 const morgan = require("morgan-body");
 
 const app = express();

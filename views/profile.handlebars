@@ -15,7 +15,7 @@
       </div>
 
       <div class="form-group">
-        <label for="blog-content">Blog:</label>
+        <label for="blog-content">Blog Entry:</label>
         <textarea class="form-input" id="blog-content" name="blog-content"></textarea>
       </div>
       <div class="form-group">
@@ -26,12 +26,18 @@
 
   {{#if blogs.length}}
   <div class="col-md-6 blog-list">
-    <h3>Current blogs:</h3>
+    <h3>Current Blogs:</h3>
 
     {{#each blogs as |blog|}}
     <div class="row mb-2">
       <div class="col-md-8">
-        <h4><a href="/blog/{{blog.id}}">{{blog.name}}</a></h4>
+        <h4><a href="/blog/{{blog.id}}">{{blog.title}}</a></h4>
+        <p>{{blog.content}}</p>
+        {{!-- {{#each comment as |comment|}}
+        <h3><a href="/blog/{{blog_id}}"></a></h3>
+        <p>{{comment}}</p>
+        {{/each}} --}}
+       
       </div>
       <div class="col-md-4">
         <button class="btn btn-sm btn-danger" data-id="{{blog.id}}">DELETE</button>

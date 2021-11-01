@@ -1,15 +1,19 @@
+
+
 [
     {
-        "comment": "send you notifications whenever a concert is playing in your area."
-        
+        "comment": "send you notifications whenever a concert is playing in your area.",
+        "user_id":1,
+        "blog_id": 1
     },
     {
-      
-        "comment": " give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!"
-    
+      "comment": " give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!",
+      "user_id":2,
+      "blog_id":2    
     },
     {
-        "comment": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes."
-     
+      "comment": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes.",
+      "user_id": 3,
+      "blog_1d":3
     }
 ]

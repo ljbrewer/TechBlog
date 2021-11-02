@@ -33,15 +33,18 @@
       <div class="col-md-8">
         <h4><a href="/blog/{{blog.id}}">{{blog.title}}</a></h4>
         <p>{{blog.content}}</p>
-        {{!-- {{#each comment as |comment|}}
-        <h3><a href="/blog/{{blog_id}}"></a></h3>
-        <p>{{comment}}</p>
-        {{/each}} --}}
-       
       </div>
       <div class="col-md-4">
         <button class="btn btn-sm btn-danger" data-id="{{blog.id}}">DELETE</button>
       </div>
+      {{#each comments as |comment|}}
+      <div>
+        <div class="col-md-8">
+        <a href="/comment/{{comment.id}}"></a>
+        <p>{{comment}}</p>
+        <p>Created by {{comment.user_id}} on {{format_date comment.date_created}}</p>
+      </div>
+      {{/each}}
     </div>
     {{/each}}
   </div>

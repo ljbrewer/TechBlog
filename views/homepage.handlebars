@@ -13,11 +13,8 @@
     </p>
   </div>  
   <div>
-    {{#each comments as |comment| }}
-    <h3>Comments:</h3>
-    <p>{{comment}}</p>
-    <p>Created by {{comment.user_id}} on {{format_date comment.date_created}}</p>
-    {{/each}}
+    {{!-- <a href="/blog/{{blog.id}}/comment/">Comments on this Blog!</a> --}}
+   {{> comment}}
   </div>
 </div>
 {{/each}}

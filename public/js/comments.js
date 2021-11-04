@@ -13,7 +13,7 @@ if(!event.target.matches('.newcommentbtn')) {
 
   console.log (content) 
 
-  if (content) {
+    if (content) {
     const response = await fetch(`/api/comments`, {
       method: 'POST',
       body: JSON.stringify({comment: content,blog_id}),
@@ -28,6 +28,7 @@ if(!event.target.matches('.newcommentbtn')) {
       alert('Failed to create comment');
     }
   }
+
 };
 
 const delButtonHandler = async (event) => {

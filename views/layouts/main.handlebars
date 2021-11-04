@@ -18,7 +18,7 @@
       <nav>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a></a>
+        <a><a href="/">homepage</a> | </a>
         <a href="/profile">profile</a> |
         <button class="no-button" id="logout">logout</button>
         {{else}}
@@ -41,6 +41,11 @@
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}
+
+  {{!-- {{#if comments}}
+  <script src="/js/comments.js"></script>
+  {{/if}} --}}
+<script src="/js/comments.js"></script>
 </body>
 
 </html>

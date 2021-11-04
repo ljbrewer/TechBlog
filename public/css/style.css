@@ -3,6 +3,7 @@ header, .blog:not(:last-child) {
 }
 
 .no-button {
+  /* login and out buttons */
   background: none;
   border: none;
   padding: 0;
@@ -13,8 +14,25 @@ header, .blog:not(:last-child) {
 }
 
 .no-button:hover {
+    /* login and out buttons */
   color: #065b83;
   text-decoration: underline;
+ 
+}
+/*
+.container {
+ margin: 15; 
+ width: 100%;
+ background:rgb(112, 209, 216);
+ align-items:center;
+
 }
 
+.new-comment-form{
+  margin: 25;
+}
 
+.comment{
+  margin: 25, auto, 25, auto;
+}
+*/

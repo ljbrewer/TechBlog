@@ -1,12 +1,16 @@
 <div class="text-center">
   <h2>{{title}}</h2>
-  
-  <p>{{content}}</p>
   <p>Created by {{user.name}} on {{format_date date_created}}</p>
+    <p>{{content}}</p>
+    <div class="text-left"></div>
+    {{#each Comments as |comment|}}
+    <div class="text-left comment">
+      <p>{{comment.comment}}</p>
+      <p>Created by {{comment.user_id}} on {{format_date comment.date_created}}</p>
+    </div>
+    {{/each}}
+    </div>
   <p>
-    
-   </p>
-  <p>
-    <button class="btn btn-primary">this blog!</button>
+      
   </p>
 </div>

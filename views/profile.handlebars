@@ -39,9 +39,9 @@
       </div>
       {{#each comments as |comment|}}
       <div>
-        <div class="col-md-8">
-        <a href="/comment/{{comment.id}}"></a>
-        <p>{{comment}}</p>
+       <div class="col-md-8">
+        <a href="/comments/{{comment.id}}"></a>
+        <p>{{>comment}}</p>
         <p>Created by {{comment.user_id}} on {{format_date comment.date_created}}</p>
       </div>
       {{/each}}

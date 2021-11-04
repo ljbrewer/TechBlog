@@ -1,23 +1,23 @@
-<div class="row mt-4">
-    <div class="col-md-6">
+<div class="row m-auto pl-5">
+    <div class="col-md-12">
         <h3>Add a Comment:</h3>
         <form class="form new-comment-form">
-            <input name="blog_id" id="blog_id" type="hidden" value="{{id}}">
             <div class="form-group">
                 <label for="comment-content">Comment Entry:</label>
-                <textarea class="form-input" id="comment-content" name="comment-content"></textarea>
+                <textarea class="form-input" id="comment-content-{{id}}" name="comment-content"></textarea>
             </div>
             <div class="form-group">
-                <button type="submit" class="btn btn-primary">Create</button>
+                <button data-id="{{id}}" class="btn btn-primary newcommentbtn">Create</button>
             </div>
         </form>
     </div>
-
+</div>
 
 
 {{#each Comments as |comment|}}
-<div class="text-center">
+<div class="text-left comment">
     <p>{{comment.comment}}</p>
-    <p>Created by {{comment.user.name}} on {{format_date comment.date_created}}</p>
+    <p>Created by {{comment.user_id}} on {{format_date comment.date_created}}</p>
 </div>
 {{/each}}
+

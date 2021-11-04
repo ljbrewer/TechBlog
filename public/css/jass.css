@@ -397,7 +397,7 @@ h6 {
 
 p {
   font-size: 1.1rem;
-  margin: 0 0 1rem;
+  margin: 15 0 1rem;
   line-height: 1.5;
 }
 
@@ -409,7 +409,7 @@ dl {
 }
 
 label {
-  display: inline-block;
+  display:inline;
 }
 
 input,
@@ -425,7 +425,7 @@ a {
 }
 
 a:hover {
-  color: #065b83;
+  color: #83065e;
   text-decoration: underline;
 }
 
@@ -1107,14 +1107,16 @@ a:hover {
 .card.card-rounded .card-header {
   border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
 }
-
+.container {
+  background-color: aqua;
+}
 form {
-  width: 100%;
+  width: 85%;
 }
 
 form .form-group {
   display: block;
-  width: 100%;
+  width: 95%;
   margin: 0.625rem 0;
 }
 
@@ -1144,7 +1146,7 @@ form .form-input {
   padding: 0.75rem;
   color: #1a1a1a;
   background-color: #ffffff;
-  margin: 0.625rem 0;
+  margin: 1.0rem 0;
   font-size: 1.2rem;
   border: 1px solid #484848;
   border-radius: 0.3rem;
@@ -1178,18 +1180,18 @@ form [type='radio'] {
 /* FLEX CONTENT */
 .flex-row {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction:row;
+  flex-wrap: nowrap;
 }
 
 .flex-column {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .flex-wrap {
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .flex-no-wrap {
@@ -1251,7 +1253,7 @@ form [type='radio'] {
 .row {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   margin-left: -15px;
   margin-right: -15px;
 }
